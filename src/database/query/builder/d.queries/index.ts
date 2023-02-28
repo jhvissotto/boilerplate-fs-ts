@@ -1,0 +1,11 @@
+export * from './getPost'
+export * from './getPostByTag'
+export * from './getPostByTagNUser'
+export * from './getPostWithTag'
+export * from './getTagWithPost'
+
+export * as getPost from './getPost'
+export * as getPostByTag from './getPostByTag'
+export * as getPostByTagNUser from './getPostByTagNUser'
+export * as getPostWithTag from './getPostWithTag'
+export * as getTagWithPost from './getTagWithPost'

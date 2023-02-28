@@ -1,0 +1,88 @@
+POST http://localhost:4000/security/keygen?
+# &rounds=10
+
+Content-Type: application/json
+# Authorization: Basic user:pass
+# Authorization: Bearer abcd
+# X-REQUEST-TYPE: GraphQL
+{ 
+	"KEY": "xyz456", 
+	"password": "abc123"
+}
+
+
+# ========================== #
+# ======== RESPONSE ======== #
+# ========================== #
+
+
+{
+	"reqId_short": "26d0f5e7a92",
+	"reqId_v4": "8c7b61ba-c312-48e5-9963-97699f09df83",
+	"date_value": 1675063747127,
+	"date_full": "2023-01-30T07:29:07.127Z",
+	"date_formated": "2023-01-30  02:29:07",
+	"cache_enable": null,
+	"cache_response": null,
+	"cache_duration": "",
+	"status_message": "",
+	"status_description": "",
+	"status_code": null,
+	"status_flag": "",
+	"validation_params": {},
+	"validation_query": {},
+	"validation_body": {
+		"KEY": "xyz456",
+		"password": "abc123"
+	},
+	"validation_isSanitized": true,
+	"valid_user": null,
+	"valid_pass": null,
+	"valid_credentials": null,
+	"user_level": null,
+	"user_levelReq": 0,
+	"user_isStaff": null,
+	"staff_level": null,
+	"staff_levelReq": null,
+	"token_valid": null,
+	"token_user": "",
+	"token_server": "",
+	"token_serverDuration": "",
+	"apiKey_valid": null,
+	"apiKey_user": "",
+	"apiKey_server": "",
+	"retryNumber": 0,
+	"pagined": null,
+	"page_key": 0,
+	"page_items": 0,
+	"page_number": 0,
+	"page_isLast": null,
+	"props_meta": {},
+	"props": {
+		"bcrypt_salt": "$2b$10$Ig7vWcrW4ZM66FbI9WM8au",
+		"bcrypt_passHash": "$2b$10$BpiAbfRC6aNum2lC6CA0oOukRJUbslglKLcSL6Nv5YVj4d9wXC.tO",
+		"crypt_generated_iv": "026d79e8ae038177f1336d154b48e2b5",
+		"crypt_generated_key": "e85fcc278f8101993731948a0aef0dd21143b9bfcff1d24c75b8694a8f92bef4",
+		"crypt_converted_key": "c92b27f043f1cd721c73b8faeaabf7c16e9800fbf28cc373"
+	},
+	"list_meta": {},
+	"list": [],
+	"list_length": 0,
+	"list_isEmpty": true,
+	"list_isFilled": false,
+	"list_isZero": true,
+	"list_isUnique": false,
+	"list_isMany": false,
+	"resources_meta": {},
+	"resources_count": 0,
+	"resources": {},
+	"req_isSuccess": null,
+	"req_isOk": null,
+	"req_isError": null,
+	"req_hasWarns": null,
+	"errors_inDatabase": null,
+	"errors_inServices": null,
+	"errors_has": false,
+	"errors": []
+}
+

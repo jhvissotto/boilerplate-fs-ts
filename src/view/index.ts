@@ -1,0 +1,10 @@
+export * as design from './design'
+
+export * as Comp from './components'
+export * as Doc from './documents'
+export * as Html from './html'
+export * as Icon from './icons'
+export * as Layout from './layouts'
+export * as Screen from './screens'
+export * as Tempt from './templates'
+export * as UI from './ui'

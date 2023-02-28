@@ -1,0 +1,23 @@
+// libs
+import { link } from '~/src/libs/functions'
+// app
+import { createDef } from '~/src/components'
+import { level } from '~/src/navigation'
+// local
+import { schema } from '.'
+
+// prettier-ignore
+export const defs = createDef<schema.Req['params'], schema.Req['query']>({
+  // controller
+  name:     'database_select',
+  active:   true,
+  method:   'get',
+  pattern:  '/database/select/:table',
+  url:      (p, q) => link.stringify(`/database/select/${p.table}`, q),
+  // middlewares
+  canSanitize:    true,
+  withAuth:       null,
+  user_levelReq:  level.user.L0_Free.N,
+  staff_levelReq: level.staff.L0_Dev.N,
+  canCache:       false,
+})
